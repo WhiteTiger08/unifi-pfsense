@@ -20,10 +20,10 @@ if ! /usr/sbin/pkg -N 2> /dev/null; then
 fi
 
 # If installation failed, exit:
-if ! /usr/sbin/pkg -N 2> /dev/null; then
-  echo "ERROR: pkgng installation failed. Exiting."
-  exit 1
-fi
+#if ! /usr/sbin/pkg -N 2> /dev/null; then
+#  echo "ERROR: pkgng installation failed. Exiting."
+#  exit 1
+# fi
 
 # Determine this installation's Application Binary Interface
 ABI=`/usr/sbin/pkg config abi`
